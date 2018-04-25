@@ -1,6 +1,4 @@
-﻿using CVBonsai.Root;
-using CVBonsai.Root.ViewModel;
-using CVBonsai.Root.Repository;
+﻿using CVBonsai.Root.ViewModel;
 using CVBonsai.Root.ViewController;
 using CVBonsai.Trunk.Repository.Implementation;
 using Xamarin.Forms;
