@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using CorePCL;
-using Xamarin.Forms;
 
 namespace CVBonsai.Root.ViewModel
 {
