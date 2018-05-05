@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using Acr.UserDialogs;
-using CorePCL;
-using Newtonsoft.Json;
-using CVBonsai.Trunk.Repository.Implementation;
-using CVBonsai.Root.ViewModel;
-using CVBonsai.Interface.Repository;
-using Xamarin.Forms;
 using BasePCL.Networking;
+using CorePCL;
+using CVBonsai.Interface.Repository;
+using CVBonsai.Root.ViewModel;
+using CVBonsai.Trunk.Repository.Implementation;
+using Newtonsoft.Json;
+using Xamarin.Forms;
 
 namespace CVBonsai.Root.ViewController
 {
