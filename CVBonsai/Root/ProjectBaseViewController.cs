@@ -4,10 +4,11 @@ using System.Diagnostics;
 using Acr.UserDialogs;
 using CorePCL;
 using Newtonsoft.Json;
-using CVBonsai.Trunk.Repository;
 using CVBonsai.Trunk.Repository.Implementation;
 using CVBonsai.Root.ViewModel;
 using CVBonsai.Interface.Repository;
+using Xamarin.Forms;
+using BasePCL.Networking;
 
 namespace CVBonsai.Root.ViewController
 {
@@ -19,6 +20,7 @@ namespace CVBonsai.Root.ViewController
 		public bool HasSpecificResponse { get; set; }
 
 		protected ProjectBaseViewController()
+            :base(new RestService(DependencyService.Get<INetworkInteraction>()))
         {
 			_MasterRepo = MasterRepository.MasterRepo;
 
