@@ -1,4 +1,4 @@
-﻿using CVBonsai.Interface.Repository;
+using CVBonsai.Interface.Repository;
 using PCLBase.DataContracts;
 
 namespace CVBonsai.Root.Repository
@@ -13,3 +13,4 @@ namespace CVBonsai.Root.Repository
         }
     }
 }
+

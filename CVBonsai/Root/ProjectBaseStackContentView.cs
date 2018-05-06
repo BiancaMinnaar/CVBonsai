@@ -1,4 +1,4 @@
-﻿using CVBonsai.Root.ViewController;
+using CVBonsai.Root.ViewController;
 using CVBonsai.Root.ViewModel;
 using CVBonsai.Trunk.Repository.Implementation;
 using Xamarin.Forms;
@@ -22,3 +22,4 @@ namespace CVBonsai.Root.View
         protected abstract void SetSVGCollection();
     }
 }
+

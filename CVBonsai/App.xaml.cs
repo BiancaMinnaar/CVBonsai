@@ -1,4 +1,5 @@
 ﻿//using CVBonsai.Implementation.View;
+using CVBonsai.Implementation.View;
 using CVBonsai.Trunk.Repository.Implementation;
 using Xamarin.Forms;
 
@@ -11,7 +12,7 @@ namespace CVBonsai
             InitializeComponent();
 
             var _MasterRepo = MasterRepository.MasterRepo;
-            //_MasterRepo.SetRootView(new NavigationPage(new LoginView()));
+            _MasterRepo.SetRootView(new NavigationPage(new LoginView()));
             //_MasterRepo.SetRootView(new NavigationPage(new TestHarnesView()));
             MainPage = _MasterRepo.GetRootView();
         }

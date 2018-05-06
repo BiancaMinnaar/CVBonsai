@@ -1,10 +1,9 @@
-﻿using CVBonsai.Root;
+using CVBonsai.Root;
 using CVBonsai.Root.Repository;
 using CVBonsai.Root.ViewController;
 using CVBonsai.Root.ViewModel;
 using CVBonsai.Trunk.Repository.Implementation;
 using Xamarin.Forms;
-
 
 namespace CVBonsai.Root.View
 {
@@ -16,9 +15,9 @@ namespace CVBonsai.Root.View
 
         protected ProjectBaseContentPage()
         {
-			_ViewController = new T();
-			_ViewController.InputObject = new M();
-			SetSVGCollection();
+            _ViewController = new T();
+            _ViewController.InputObject = new M();
+            SetSVGCollection();
             _ViewController._MasterRepo = MasterRepository.MasterRepo;
             _ViewController.SetRepositories();
         }
@@ -26,3 +25,4 @@ namespace CVBonsai.Root.View
         protected abstract void SetSVGCollection();
     }
 }
+

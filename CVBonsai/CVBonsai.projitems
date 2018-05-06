@@ -10,11 +10,17 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\LoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\IMasterRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\MasterRepository.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Root\MasterModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseContentPage.cs" />
@@ -25,8 +31,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseViewController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Root\SVGBindingProperty.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\IMasterRepository.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\MasterRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\ILoginViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\LoginViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\ILoginRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\LoginRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\ILoginService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\LoginService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />
